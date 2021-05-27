@@ -20,5 +20,8 @@ DEVICE_PATH := device/huawei/prague
 ## Inherit common device
 $(call inherit-product, device/huawei/hi6250-common/hi6250.mk)
 
+## Inherit vendor blobs
+$(call inherit-product, vendor/huawei/prague/prague-vendor.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
