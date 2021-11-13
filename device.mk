@@ -27,5 +27,8 @@ $(call inherit-product, vendor/huawei/prague/prague-vendor.mk)
 PRODUCT_PACKAGES += \
     init.hisi.odm.rc
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
