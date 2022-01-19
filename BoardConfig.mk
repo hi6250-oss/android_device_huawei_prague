@@ -18,7 +18,7 @@
 DEVICE_PATH := device/huawei/prague
 
 ## Include common BoardConfig
-include device/huawei/hi6250-common/BoardConfigCommon.mk
+include device/huawei/hi6250-8-common/BoardConfigCommon.mk
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := hi6250,prague

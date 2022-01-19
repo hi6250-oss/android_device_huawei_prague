@@ -15,7 +15,7 @@ fi
 set -e
 
 export DEVICE=prague
-export DEVICE_COMMON=hi6250-common
+export DEVICE_COMMON=hi6250-8-common
 export VENDOR=huawei
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
