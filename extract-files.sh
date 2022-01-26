@@ -12,6 +12,9 @@ function blob_fixup() {
 	    sed -i 's/gb2312/utf-8/g' "${2}"
 	    sed -i 's/GB2312/UTF-8/g' "${2}"
             ;;
+	odm/lib64/hwcam/hwcam.hi6250.m.PRAGUE.so)
+	    "${PATCHELF}" --add-needed "libtinyxml2_v26.so" "${2}"
+	    ;;
     esac
 }
 
